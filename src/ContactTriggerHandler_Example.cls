@@ -1,5 +1,5 @@
 /**********************************IMPORTANT**************************************
-* Class: ContactTriggerHandler 
+* Class: ContactTriggerHandler_Example 
 * Created by : Nadeem Shaikh
 ----------------------------------------------------------------------------------
 * Purpose/Methods: Central trigger logic for the Contact object in the system.
@@ -12,9 +12,9 @@
     1.0      Nadeem Shaikh     21/10/2014      INITIAL DEVELOPMENT
 *********************************************************************************/
 
-Public with sharing class ContactTriggerHandler extends TriggerHandler{ // class_begin
+Public with sharing class ContactTriggerHandler_Example extends TriggerHandler{ // class_begin
   
-  public ContactTriggerHandler() {    
+  public ContactTriggerHandler_Example() {    
   }
 
 /****************************************************
@@ -38,7 +38,8 @@ Public with sharing class ContactTriggerHandler extends TriggerHandler{ // class
 ****************************************************/
 
   protected override void afterInsert() {
-    // All code logic for AFTER INSERT Trigger context for trgLease should go here.   
+    // All code logic for AFTER INSERT Trigger context for trgLease should go here.
+    a_method_with_functionality();   
   }
 
   protected override void afterUpdate() {    
@@ -59,6 +60,8 @@ Public with sharing class ContactTriggerHandler extends TriggerHandler{ // class
    Method definition used in trigger context 
 ****************************************************/
 
+  private void a_method_with_functionality(){    
+  }
   
     
 } // class_end
