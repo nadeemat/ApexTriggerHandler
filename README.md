@@ -459,8 +459,7 @@ Switch<o:p></o:p></span></b></p>
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>Every time a
 trigger runs the trigger handler framework creates a record for its trigger
 Handler under <span class=SpellE>TriggerHandler</span>__c custom setting, To
-switch off a specific trigger one just needs to go to the list of custom
-settings record and <o:p></o:p></span></p>
+switch off a specific trigger just open the Trigger manager, de-activate the trigger and save.<o:p></o:p></span></p>
 
 </div>
 
