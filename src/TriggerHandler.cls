@@ -7,6 +7,7 @@
 * Utility Test Data: Test_TriggerHandler 
 ----------------------------------------------------------------------------------
 * Version History: (All changes and TA reworks should be entered as new row )
+
 * VERSION  DEVELOPER NAME    DATE            DETAIL FEATURES
     1.0    Nadeem Shaikh     21/10/2014      INITIAL DEVELOPMENT
 *********************************************************************************/
@@ -22,7 +23,7 @@ public virtual class TriggerHandler {
     bypassedHandlers = new Set<String>();
   }
     
-  public TriggerHandler() {    
+  public TriggerHandler() {
 
   }
 
@@ -35,7 +36,6 @@ public virtual class TriggerHandler {
 
     if(!validateRun()) return;
 
-    //if(!addToLoopCount()) return;
     addToLoopCount();
 
     // dispatch to the correct handler method
@@ -90,18 +90,15 @@ public virtual class TriggerHandler {
    * private methods
    ***************************************/
 
-  private Boolean addToLoopCount() {
+  private void addToLoopCount() {
     String handlerName = getHandlerName();
     if(TriggerHandler.loopCountMap.containsKey(handlerName)) {
       Boolean exceeded = TriggerHandler.loopCountMap.get(handlerName).increment();
       if(exceeded) {
         Integer max = TriggerHandler.loopCountMap.get(handlerName).max ;
         //throw new TriggerHandlerException('Maximum loop count of ' + String.valueOf(max) + ' reached in ' + handlerName);
-        System.debug('========= Warning : Max Trigger Execution Reached! Attempt to run ' + max + '.');
-        return false ;
-      }        
+      }
     }
-      return true;
   }
 
   // make sure this trigger should continue to run
@@ -111,19 +108,6 @@ public virtual class TriggerHandler {
     }
     if(TriggerHandler.bypassedHandlers.contains(getHandlerName())) {
       return false;
-    }
-    TriggerHandler__c tac = TriggerHandler__c.getInstance(getHandlerName());
-    if(tac == null){
-        System.debug('=========== Custom setting for the trigger : '+ getHandlerName() + ' not found! Activating the trigger.');
-        tac = new TriggerHandler__c();
-        tac.Name = getHandlerName();
-        tac.Active__c = true;
-        insert tac;
-        System.debug('=========== Trigger Handler : '+getHandlerName() + ' activated!');
-    }
-    if(tac.Active__c == false){
-        System.debug('=========== Trigger Handler ' + getHandlerName() + ' is deactivated skipping trigger execution.');
-        return false;
     }
     return true;
   }
