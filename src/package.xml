@@ -30,6 +30,10 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>Trigger_Manager</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
         <members>delete</members>
         <members>glyph_plus</members>
         <name>StaticResource</name>
