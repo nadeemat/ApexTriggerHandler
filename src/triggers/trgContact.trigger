@@ -11,7 +11,7 @@
 * VERSION    DEVELOPER NAME    DATE            DETAIL FEATURES
     1.0      Nadeem Shaikh     21/10/2014      INITIAL DEVELOPMENT
 *********************************************************************************/
-trigger trgContact_Example on Contact (before insert, before update , before delete , after insert , after update , after delete , after undelete) {
+trigger trgContact on Contact (before insert, before update , before delete , after insert , after update , after delete , after undelete) {
 
-	new ContactTriggerHandler().run();
+    new ContactTriggerHandler().run();
 }
