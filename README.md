@@ -9,7 +9,7 @@
 
 
 <a href="https://login.salesforce.com/?ec=302&startURL=%2Fsetup%2Fsecur%2FRemoteAccessAuthorizationPage.apexp%3Fsource%3Dl86Hcy6qEKtWNqzXVErZDlmcRQs0D_HBE55MLVuP3x8t5wXkyHYyrVx2Xb5JoWzyVOJrnTqMMaWy_Sfomv.j1xklSQ67NPiEbdAN9YkfbH9Vb5vACs0QCjjDYj0kLUJinCe3L.jnUjoAVSi_Cdyepir_ptFSP7uLipVtmuBydxWqSIaSVVAw.vZi.CzuT9AApTfPoyYbP2aax.BremkJm58Vbl28sNnLi9muF.y33pS2k_BwR2LNo6qJ.xmRDwEV0JzlsyIE.n6BCarqpl7xM01xGVBF0FSmg0lfW8aiymcygDcD3fSx31Do97yO38Hu54WjIS74lQD3eOWcF97T3vznMypMywaqKWTiBjW0ny2l3rUQHdaEGBw5OzC2V0sdoWh8zlOD14QjR2IxRTahoL2rt8djf.Xv9.uLXcnduM73T4HtAII8jlH1jIoNKnyiyij7c3u6t9gJZLkCdYA5VoKCpB4peU0dGqqNhWjc9uPADy.XRQrl.tUWzgXN8_TwRJkHw3zdTw1Z8r.yppjBCWIaWv5k_kM4%253D">
-  Sandbox : <img alt="Deploy to Salesforce"
+ Production/Dev : <img alt="Deploy to Salesforce"
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
 </a>
 
