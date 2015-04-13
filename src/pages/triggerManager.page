@@ -119,7 +119,7 @@
                 </div>
             
                 <div style="float:left ; width: 95%; padding: 2px 0px 0px 5px;">
-                The page populates all the trigger handlers run atleast once (via the trigger handler framework) automatically, to turn off a trigger deacticate its trigger handler class. In case you cannot find your trigger handler class here, it either has not run yet or is not a part of the trigger handler framework. You can add a trigger handler to the list manually by <i><b>Correctly</b></i> typing in the trigger handler class name under the <i><b>Handler Name column</b></i> >> choosing if it is <i><b>Active</b></i> >> <i><b>Save</b></i>.
+                The page populates all the trigger handlers run atleast once (via the trigger handler framework) automatically, to turn off a trigger deactivate its trigger handler class. In case you cannot find your trigger handler class here, it either has not run yet or is not a part of the trigger handler framework. You can add a trigger handler to the list manually by <i><b>Correctly</b></i> typing in the trigger handler class name under the <i><b>Handler Name column</b></i> >> choosing if it is <i><b>Active</b></i> >> <i><b>Save</b></i>.
                 </div>
             </div>
                   
