@@ -2,6 +2,17 @@
 
 <body lang=EN-US style='tab-interval:.5in'>
 
+<a href="https://test.salesforce.com/?ec=302&startURL=%2Fsetup%2Fsecur%2FRemoteAccessAuthorizationPage.apexp%3Fsource%3Dl86Hcy6qEKtWNqzXVErZDlmcRQs0D_HBE55MLVuP3x8t5wXkyHYyrVx2Xb5JoWzyVOJrnTqMMaWy_Sfomv.j1xklSQ67NPiEbdAN9YkfbH9Vb5vACs0QCjjDYj._VCXXH6CbpLjOJLXzpYsWjREqjpoHp9pwBrG34PR0w2P41smVl5pK4cMdUR3dy0DRIaaVEtvr5UPey6eaN.WkyDqK..BAfu5pgB4Gnpe2Oe7O9Zd1KKlxPXh.4cPubgy5taKPDi9Cwo4gJSJXoOmNt1oinXjAlsB23d6a_s6JIuj9yngVD0B_Ff82jPZsdNI.yzFN7_qNQtSdE96hQUvkPNTNeAHnQlCr60L4LA8ErYjm8.jpMVOFHdp6Y43V.J2VWKlNecI77BimcuCxzl4fGg9C7EecS8fbwPqPCSjlx_id6_QnqOpjmPQDG54IbNahXLTqOY0jbhUXMwz73ftH0rQk25EamS37qX8iznH_oH9_.0ilyxM0muZiPiypoMRtBVB_C2YFd5PG0_mv.L._XilbyqYS2plDvO2.jqilgr2bL6Q%253D%253D">
+  Sandbox : <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
+</a>
+
+
+<a href="https://login.salesforce.com/?ec=302&startURL=%2Fsetup%2Fsecur%2FRemoteAccessAuthorizationPage.apexp%3Fsource%3Dl86Hcy6qEKtWNqzXVErZDlmcRQs0D_HBE55MLVuP3x8t5wXkyHYyrVx2Xb5JoWzyVOJrnTqMMaWy_Sfomv.j1xklSQ67NPiEbdAN9YkfbH9Vb5vACs0QCjjDYj0kLUJinCe3L.jnUjoAVSi_Cdyepir_ptFSP7uLipVtmuBydxWqSIaSVVAw.vZi.CzuT9AApTfPoyYbP2aax.BremkJm58Vbl28sNnLi9muF.y33pS2k_BwR2LNo6qJ.xmRDwEV0JzlsyIE.n6BCarqpl7xM01xGVBF0FSmg0lfW8aiymcygDcD3fSx31Do97yO38Hu54WjIS74lQD3eOWcF97T3vznMypMywaqKWTiBjW0ny2l3rUQHdaEGBw5OzC2V0sdoWh8zlOD14QjR2IxRTahoL2rt8djf.Xv9.uLXcnduM73T4HtAII8jlH1jIoNKnyiyij7c3u6t9gJZLkCdYA5VoKCpB4peU0dGqqNhWjc9uPADy.XRQrl.tUWzgXN8_TwRJkHw3zdTw1Z8r.yppjBCWIaWv5k_kM4%253D">
+  Sandbox : <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
+</a>
+
 <div class=WordSection1>
 
 <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
