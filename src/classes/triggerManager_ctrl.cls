@@ -1,9 +1,11 @@
 public class triggerManager_ctrl {
     
     Public List<TriggerHandler__c> lstTriggers {get;set;}
+    Public Boolean notificationDisp {get;set;}
     
     public triggerManager_ctrl() {        
         lstTriggers = pullAllSettings();
+        notificationDisp = false;
     }
     
     
@@ -17,7 +19,8 @@ public class triggerManager_ctrl {
     }
     
     Public pagereference save(){
-        ApexPages.addMessage( new ApexPages.Message(ApexPages.Severity.CONFIRM, 'Settings saved successfully!') );        
+        ApexPages.addMessage( new ApexPages.Message(ApexPages.Severity.CONFIRM, 'Settings saved successfully!') );       
+        notificationDisp = true; 
         upsert lstTriggers ;
         return null;
         
@@ -31,16 +34,22 @@ public class triggerManager_ctrl {
     }
     
     public pagereference deleteRow(){
-
-        try{
+    
+            notificationDisp = false;
             system.debug('###--intIndex--Call--');
             integer intIndex = integer.ValueOf(ApexPages.CurrentPage().GetParameters().Get('indexDelete'));
             system.debug('###--intIndex--'+intIndex + ' : list size : ' + lstTriggers .size());
-                
+            
+
+        try{                
             if(intIndex != null) {                
-                delete lstTriggers[intIndex];
+                                
+                if(lstTriggers[intIndex].Name != null && TriggerHandler__c.getValues(lstTriggers[intIndex].Name) != null){
+                    delete lstTriggers[intIndex];
+                }                
                 lstTriggers.remove(intIndex);
-                ApexPages.addMessage( new ApexPages.Message(ApexPages.Severity.CONFIRM, 'Setting deleted successfully!') );        
+                ApexPages.addMessage( new ApexPages.Message(ApexPages.Severity.CONFIRM, 'Setting deleted successfully!') );  
+                notificationDisp = true;      
             }else{
                 system.debug('###--intIndex--is null : '+intIndex);
             }
@@ -48,6 +57,8 @@ public class triggerManager_ctrl {
         }
         catch(Exception ex){
              ApexPages.addMessage( new ApexPages.Message(ApexPages.Severity.ERROR,'Oops! We encountered an error, the administrator has been notified. Description : ' + ex) );
+             notificationDisp = true;
+             lstTriggers.remove(intIndex);
              return null ; 
          }
     
